@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="../css/font-awesome.min.css">
+
+<style>
+body{
+	 margin:0;
+	 font-family:open-sans-regular;
+	 font-size:14px;
+	 background:gray;
+ }
+*{
+	 box-sizing:border-box;
+ }
+.nav{
+	list-style:none;
+	padding: 0px;
+    margin: 0px;
+	background: #fff;
+}
+.nav li{
+	position: relative;
+	display: block;
+    height: 38px;
+    line-height: 33px;
+	font-size: 14px;
+	border-left: 2px solid transparent;
+    font-family: sans-serif;
+    border-bottom: 1px solid #fbfbfb;
+    margin:0px;
+	padding:3px;
+	box-shadow: 0px 0.2px rgba(0,0,0,0.01);
+}
+.nav li:hover{
+	background:#fbfbfb;
+	border-left: 2px solid dodgerblue;
+}
+.nav li a{
+    text-decoration: none;
+    color: #555;
+}
+.nav li a:hover{
+	color:#262626;
+}
+.menu-icons{
+	position: absolute;
+	 padding: 8px 8px;
+} 
+.icon-info{
+	color:dodgerblue;
+}
+.icon-danger{
+	color:red;
+}
+.menu-text{
+    margin-left:40px;
+}
+
+.header{
+	min-height:50px;
+	background-color:#112437;
+	margin:1px;
+}
+.caption{
+	color:#fff; 
+	font-weight:800;
+	font-family:sans-serif;
+    font-size: 30px;
+	margin-left: 50px;
+    margin-top: 7px;
+    padding: 8px 12px;
+	width: 400px;
+    height: 15px;
+}
+.caption-head{
+}
+.side-menu{
+	height:700px;
+	background-color:#fff;
+	margin:1px;
+}
+.right-content{
+	height:700px;
+	background-color:#fff;
+	margin:1px;
+}
+.panel-input{
+	margin-top: 60px;
+	border:0.5px solid dodgerblue
+}
+.no-padding{
+    padding: 0!important;
+}
+.form-heading{
+    background-color:  #2dc3e8;
+    color: #fff;	
+	 font-family: sans-serif;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+.form-body{
+	background: #fbfbfb;
+}
+.form-group{
+    font-size: 14px;
+	 padding: 2px;
+	 position:relative;
+    font-family: sans-serif;
+}
+.input-text{
+    width: 100%;
+    padding: 8px 12px;
+}
+.input-icon{
+	position:absolute;
+    top: 10px;
+    left: 440px;
+	z-index:0;
+}
+.btn{
+    padding: 8px 16px;
+    border-radius: 5px;
+    border-color: #2dc3e8;
+    background-color: #2dc3e8;
+	color: #fff;
+	outline:0;
+	transition: 0.2s ease-in-out;
+}
+.text-field{
+	padding: 2px;
+    border-color: #f3f3f3;
+}
+.image {
+	margin-right: 50px;
+	height:40px;
+	width:50px;
+	z-index:99;
+	float:right;
+	border-radius: 20px;
+    background-color: #fff;
+}
+.image-add{
+	float:left;
+	margin-right: 50px;
+	height:40px;
+	width:50px;
+	z-index:99;
+	border-radius: 20px;
+    background-color: #fff;
+}
+.side1{
+	position:relative;
+	height:180px;
+	width:150px;
+	margin-top:-697px;
+	margin-right:30px;
+	float:right;
+}
+.panel{
+	list-style:none;
+}
+.card{
+	font-size:20px;
+	background-color:#112437;
+	color:#fff;
+	    padding: 8px 16px;
+	border-bottom:1px solid #fff;
+}
+.dropdown{
+}
+.side1::before{
+	position: absolute;
+    height: 25px;
+    margin-top:0px;
+    margin-left: 115px;
+    width: 25px;
+    background-color: #112437;
+    content: '';
+    background: linear-gradient(-45deg,transparent 0%,transparent 50%,black 50%,black 100%);
+    transform: rotateZ(45deg);
+
+}
+[class*='layout-']{
+	float:left;
+	padding:5px;
+	position:relative;
+}
+.layout-12{
+	width:100%;
+	
+}
+.layout-11{
+	width:91.6666%;
+}
+.layout-10{
+	width:83.3333%;
+}
+.layout-9{
+	width:75%;
+}
+.layout-8{
+	width:66.6666%;
+}
+.layout-7{
+	width:58.3333%;
+}
+.layout-6{
+	width:50%;
+}
+.layout-5{
+	width:41.6666%;
+}
+.layout-4{
+	width:33.3333%;
+} 
+.layout-3{
+	width:25%;
+}
+.layout-2{
+	width:16.66667%;
+}
+.layout-1{
+	width:8.3333%;
+}
+</style>
+</head>
+<body>
+<div class="layout-12 no-padding header"> 
+	<div class="caption">Triecoders</div>
+	<div class="image">
+		<img src="../images/Triecoders_Logo.png" alt="Tricoders">
+	</div>
+	<div class="image-add">
+		<img src="../images/Triecoders_Logo.png" alt="Tricoders">
+	</div>
+</div>
+<div class="layout-12 no-padding">
+	<div class="layout-2 no-padding">
+		<div class="side-menu">
+			<div class="no-padding">
+			<ul class="nav">
+				<li>
+					<a href="#">
+						<i class=" menu-icons fa fa-search icon-info"></i>
+						<span class="menu-text"></span> 
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class=" menu-icons fa fa-home"></i>
+						<span class="menu-text">Data board</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-tasks"></i>
+						<span class="menu-text">Data boxes</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-th"></i>
+						<span class="menu-text">Widgets</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-desktop"></i>
+						<span class="menu-text">Elements</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-table"></i>
+						<span class="menu-text">Tables</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-pencil-square-o"></i>
+						<span class="menu-text">Forms</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-bar-chart-o"></i>
+						<span class="menu-text">charts</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-picture-o"></i>
+						<span class="menu-text">Profile</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-envelope-o"></i>
+						<span class="menu-text">Mail</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-calendar"></i>
+						<span class="menu-text">Calendar</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-paperclip"></i>
+						<span class="menu-text">Pages</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-link"></i>
+						<span class="menu-text">More pages</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-align-right"></i>
+						<span class="menu-text">Right to left</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="menu-icons fa fa-fire icon-danger"></i>
+						<span class="menu-text">Beyond versions</span>
+					</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<div class="layout-10 no-padding">
+		<div class="right-content">
+		
+			<div class="layout-5 no-padding panel-input">
+				<div class="form-heading">New RegistrationForm</div>
+				<div class="form-body">
+				<form>
+					<div class="form-group">
+					<input class="input-text" type="text" placeholder="Enter your name">
+						<span class="input-icon">
+							<i class="fa fa-user"></i>
+						</span>
+					</div>
+					<div class="form-group">
+					<input class="input-text" type="text" placeholder="class">
+						<span class="input-icon">
+							<i class="fa fa-tasks"></i>
+						</span>
+					</div>
+					<div class="form-group">
+					<input class="input-text" type="number" placeholder="Rollno">
+						<span class="input-icon">
+							<i class="fa fa-pencil-square-o"></i>
+						</span>
+					</div>
+					<div class="form-group">
+					<input class="input-text" type="number" placeholder="mobile">
+						<span class="input-icon">
+							<i class=" fa fa-pencil-square-o"></i>
+						</span>
+					</div>
+					<div class="form-group">
+					<input class="input-text" type="date" placeholder="D.O.B">
+						<span class="input-icon">
+							<i class="fa fa-calendar"></i>
+						</span>
+					</div>
+					<div class="form-group">
+					<input class="input-text" type="text" placeholder="College">
+						<span class="input-icon">
+							<i class="fa fa-home"></i>
+						</span>
+					</div>
+					<div class="form-group">
+					<input class="input-text" type="Email" placeholder="Email">
+						<span class="input-icon">
+							<i class="fa fa-envelope-o"></i>
+						</span>
+					</div>
+					<div class="form-group">
+					<input class="input-text" type="Password" placeholder="password">
+						<span class="input-icon">
+							<i class="fa fa-lock"></i>
+						</span>
+					</div>
+					<div class="form-group">
+					<input class="input-text" type="Password" placeholder="confirm-password">
+						<span class="input-icon">
+							<i class="fa fa-lock"></i>
+						</span>
+					
+					</div>
+					<div class="form-group">
+						<button class="btn btn-md btn-danger" type="button">Submit</button>
+					</div>
+				</form>		
+				</div>
+			</div>
+			</div>
+		<div class="dropdown"></div>
+		<div class="side1">
+			<ul class="panel">
+				<li class="card">profile</li>
+				<li class="card">Logout</li>
+				<li class="card">menu1</li>
+				<li class="card">menu2</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>
